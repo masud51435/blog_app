@@ -1,4 +1,3 @@
-
 import 'package:blog_app/utlis/input_field/textField.dart';
 import 'package:blog_app/utlis/session/session_manager.dart';
 import 'package:blog_app/utlis/simple_button/roundButton.dart';
@@ -83,7 +82,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       ),
                       InputField(
                         controller: passwordController,
-                        obscureText: true,
+                        obscureText: loginUser.toggle,
                         keyBoardType: TextInputType.visiblePassword,
                         onValidator: (value) {
                           if (value == null || value.isEmpty) {
